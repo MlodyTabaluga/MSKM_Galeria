@@ -29,10 +29,10 @@ namespace MSKM_Galeria
                     Photos = new ObservableCollection<Photo>
                     {
 
-                        new Photo {Image = "./Images/chorwacja1.jpg", Caption = "Chorwacja" },
-                        new Photo {Image = "./Images/chorwacja2.jpg", Caption = "Zdjecie 1" },
-                        new Photo {Image = "./Images/wwa.jpg", Caption = "Zdjecie 1" },
-                        new Photo {Image = "./Images/wwa2.jpg", Caption = "Zdjecie 1" }
+                        new Photo {Image = "./Images/chorwacja1.jpg", Caption = "Chorwacja góry" },
+                        new Photo {Image = "./Images/chorwacja2.jpg", Caption = "Chorwacja autobus" },
+                        new Photo {Image = "./Images/wwa.jpg", Caption = "Warszawa Stadion" },
+                        new Photo {Image = "./Images/wwa2.jpg", Caption = "Strefa Ruchu Warszawa" }
                     }
 
                 },
@@ -42,10 +42,10 @@ namespace MSKM_Galeria
                     Photos = new ObservableCollection<Photo>
                     {
 
-                        new Photo {Image = "./Images/impreza1.jpg", Caption = "Zdjecie 1" },
-                        new Photo {Image = "./Images/impreza2.jpg", Caption = "Zdjecie 1" },
-                        new Photo {Image = "./Images/impreza3.jpg", Caption = "Zdjecie 1" },
-                        new Photo {Image = "./Images/impreza4.jpg", Caption = "Zdjecie 1" }
+                        new Photo {Image = "./Images/impreza1.jpg", Caption = "18 belligol" },
+                        new Photo {Image = "./Images/impreza2.jpg", Caption = "Łazienka Stara wieś" },
+                        new Photo {Image = "./Images/impreza3.jpg", Caption = "Majówka u matiego" },
+                        new Photo {Image = "./Images/impreza4.jpg", Caption = "18-nastka" }
                     }
 
                 },
@@ -56,15 +56,16 @@ namespace MSKM_Galeria
                     Photos = new ObservableCollection<Photo>
                     {
 
-                        new Photo {Image = "./Images/szkola1.jpg", Caption = "Zdjecie 1" },
-                        new Photo {Image = "./Images/szkola2.jpg", Caption = "Zdjecie 1" },
-                        new Photo {Image = "./Images/szkola3.jpg", Caption = "Zdjecie 1" },
-                        new Photo {Image = "./Images/szkola4.jpg", Caption = "Zdjecie 1" }
+                        new Photo {Image = "./Images/szkola1.jpg", Caption = "Alek, Miłosz i Kacper" },
+                        new Photo {Image = "./Images/szkola2.jpg", Caption = "Squad" },
+                        new Photo {Image = "./Images/szkola3.jpg", Caption = "Zdjecię z diho" },
+                        new Photo {Image = "./Images/szkola4.jpg", Caption = "MechanCraft" }
                     }
 
                 },
             };
-            
+
+            albumsListBox.ItemsSource = Albums;
             albumsListBox.SelectionChanged += AlbumsListBox_SelectionChanged;
 
 
@@ -88,9 +89,6 @@ namespace MSKM_Galeria
             details.ShowDialog();
 
         }
-
-
-
     }
 }
 
