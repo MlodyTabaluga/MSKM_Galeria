@@ -67,6 +67,19 @@ namespace MSKM_Galeria
 
 
             }
+
+            private void AlbumsListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+            {
+                if (albumsListBox.SelectedItems != null)
+                {
+                    Albums selectedAlbum = (Album)albumsListBox.SelectedItem;
+                    photosLIstView.ItemsSource = selectedAlbum.Photos;
+                }
+            }
+
+            
+
+
             
            
 
