@@ -8,18 +8,44 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="auto"/>
-            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <StackPanel Grid.Column="0">
-            <Label Content="Albumy:"/>
-            <ListBox x:Name="albumsListBox" Grid.Column="0" HorizontalAlignment="Left" Width="150" Height="100">
+        <ListBox Name="albumsListBox"  Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="10">
             <ListBox.ItemTemplate>
                 <DataTemplate>
-                    <TextBlock Text="{Binding Name}"/>
+                    <Border BorderBrush="LightGray" BorderThickness="2" Padding="5" Margin="0,0,0,5">
+                        <TextBlock Text="{Binding Name}"/>
+                    </Border>
                 </DataTemplate>
             </ListBox.ItemTemplate>
+            
         </ListBox>
-        </StackPanel>
+        <ListView Name="photosListView" Grid.Column="1" MouseDoubleClick="photosListView_MouseDoubleClick" HorizontalAlignment="Left">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Zdjecie" Width="150">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <Border BorderBrush="LightGray" BorderThickness="2" Padding="5" Margin="0,0,0,5">
+                                    <Image Source="{Binding Image}" Width="100" Height="100"/>
+
+                                </Border>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+
+                    <GridViewColumn Header="Podpis" Width="350" DisplayMemberBinding="{Binding Caption}">
+                        <GridViewColumn.HeaderContainerStyle>
+                            <Style TargetType="GridViewColumnHeader">
+                                <Setter Property="HorizontalContentAlignment" Value="Left"/>
+                            </Style>
+                        </GridViewColumn.HeaderContainerStyle>
+                    </GridViewColumn>
+                    
+                </GridView>
+            </ListView.View>
+        </ListView>
+            
     </Grid>
 </Window>
