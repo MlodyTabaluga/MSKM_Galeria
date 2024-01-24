@@ -64,8 +64,8 @@ namespace MSKM_Galeria
 
                 },
             };
-            albumslistBox.Items = Albums; 
-            albumsListBox.SelectionCHanged += AlbumsLIstBox_SelectionChanged;
+            
+            albumsListBox.SelectionChanged += AlbumsListBox_SelectionChanged;
 
 
 
@@ -75,8 +75,8 @@ namespace MSKM_Galeria
         {
             if (albumsListBox.SelectedItems != null)
             {
-                Albums selectedAlbum = (Album)albumsListBox.SelectedItem;
-                photosLIstView.ItemsSource = selectedAlbum.Photos;
+                Album selectedAlbum = (Album)albumsListBox.SelectedItem;
+                photosListView.ItemsSource = selectedAlbum.Photos;
             }
         }
 
@@ -85,7 +85,7 @@ namespace MSKM_Galeria
         {
             Photo photo = (Photo)photosListView.SelectedItem;
             Details details = new Details(photo);
-            Details.ShowDialog();
+            details.ShowDialog();
 
         }
 
