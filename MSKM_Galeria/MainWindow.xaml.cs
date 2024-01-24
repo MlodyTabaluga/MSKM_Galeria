@@ -34,7 +34,33 @@ namespace MSKM_Galeria
                         new Photo {Image = "./Images/esa1.jpg", Caption = "Zdjecie 1" }
                     }
 
-                }
+                },
+                new Album
+                {
+                    Name = "Imprezy",
+                    Photos = new ObservableCollection<Photo>
+                    {
+
+                        new Photo {Image = "./Images/esa1.jpg", Caption = "Zdjecie 1" },
+                        new Photo {Image = "./Images/esa1.jpg", Caption = "Zdjecie 1" },
+                        new Photo {Image = "./Images/esa1.jpg", Caption = "Zdjecie 1" }
+                    }
+
+                },
+
+                new Album
+                {
+                    Name = "Szkola",
+                    Photos = new ObservableCollection<Photo>
+                    {
+
+                        new Photo {Image = "./Images/esa1.jpg", Caption = "Zdjecie 1" },
+                        new Photo {Image = "./Images/esa1.jpg", Caption = "Zdjecie 1" },
+                        new Photo {Image = "./Images/esa1.jpg", Caption = "Zdjecie 1" }
+                    }
+
+                },
+
 
 
 
