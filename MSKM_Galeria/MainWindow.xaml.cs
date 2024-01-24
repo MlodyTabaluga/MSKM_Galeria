@@ -77,13 +77,18 @@ namespace MSKM_Galeria
                 }
             }
 
-            
 
-
-            
-           
-
+        private void photosListView_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            Photo photo = (Photo)photosListView.SelectedItem;
+            Details details = new Details(photo);
+            Details.ShowDialog();
         }
+
+
+
+
+    }
 
     }
 }
