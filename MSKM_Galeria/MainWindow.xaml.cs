@@ -63,8 +63,8 @@ namespace MSKM_Galeria
                     }
 
                 },
-
-                albumslistBox.Items = Albums;
+            };
+            albumslistBox.Items = Albums; 
             albumsListBox.SelectionCHanged += AlbumsLIstBox_SelectionChanged;
 
 
@@ -88,12 +88,19 @@ namespace MSKM_Galeria
             Details.ShowDialog();
 
         }
-    }
 
 
-
-
-    }
 
     }
 }
+
+
+        
+    
+
+
+
+
+    
+
+    
