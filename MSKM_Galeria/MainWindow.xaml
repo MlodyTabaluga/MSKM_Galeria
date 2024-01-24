@@ -10,6 +10,16 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="auto"/>
             <ColumnDefinition Width="auto"/>
-        </Grid.ColumnDefinitions> 
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0">
+            <Label Content="Albumy:"/>
+            <ListBox x:Name="albumsListBox" Grid.Column="0" HorizontalAlignment="Left" Width="150" Height="100">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Name}"/>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        </StackPanel>
     </Grid>
 </Window>
