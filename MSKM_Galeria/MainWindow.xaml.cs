@@ -61,11 +61,15 @@ namespace MSKM_Galeria
 
                 },
 
-
-
+                albumslistBox.Items = Albums;
+                albumsListBox.SelectionCHanged += AlbumsLIstBox_SelectionChanged;
+            
 
 
             }
+            
+           
+
         }
 
     }
