@@ -8,4 +8,61 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Images\chorwacja1.jpg" />
+    <None Remove="Images\chorwacja2.jpg" />
+    <None Remove="Images\impreza1.jpg" />
+    <None Remove="Images\impreza2.jpg" />
+    <None Remove="Images\impreza3.jpg" />
+    <None Remove="Images\impreza4.jpg" />
+    <None Remove="Images\szkola1.jpg" />
+    <None Remove="Images\szkola2.jpg" />
+    <None Remove="Images\szkola3.jpg" />
+    <None Remove="Images\szkola4.jpg" />
+    <None Remove="Images\wwa.jpg" />
+    <None Remove="Images\wwa2.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\wwa.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\chorwacja1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\chorwacja2.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\impreza1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\impreza2.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\impreza3.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\impreza4.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\szkola1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\szkola2.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\szkola3.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\szkola4.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\wwa2.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
 </Project>
