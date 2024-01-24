@@ -83,6 +83,7 @@ namespace MSKM_Galeria
             Photo photo = (Photo)photosListView.SelectedItem;
             Details details = new Details(photo);
             Details.ShowDialog();
+
         }
 
 
